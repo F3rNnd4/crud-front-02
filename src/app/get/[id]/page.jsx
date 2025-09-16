@@ -42,6 +42,10 @@ export default function GetByIdPage() {
       <p className={styles.text}>Nome: {comment.name}</p>
       <p className={styles.text}>Email: {comment.email}</p>
       <p className={styles.footer}>Comentário: {comment.body}</p>
+
+      <button className={styles.backButton} onClick={() => window.history.back()}>
+        Voltar
+      </button>
     </div>
   );
 }

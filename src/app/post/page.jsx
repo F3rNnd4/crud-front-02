@@ -92,6 +92,10 @@ export default function PostPage() {
           </li>
         ))}
       </ul>
+
+      <button className={styles.backButton} onClick={() => window.history.back()}>
+        Voltar
+      </button>
     </div>
   );
 }

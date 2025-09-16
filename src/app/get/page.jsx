@@ -36,6 +36,9 @@ export default function GetPage() {
 
   return (
     <div className={styles.container}>
+      <button className={styles.backButton} onClick={() => window.history.back()}>
+        Voltar
+      </button>
       <h1 className={styles.title}>Lista de Comentários</h1>
       <h2 className={styles.subtitle}>Comentários ({comments.length})</h2>
       {loading ? (
